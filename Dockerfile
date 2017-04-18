@@ -32,9 +32,7 @@ RUN yum info \
     && cd /tmp \
     && rm -rf luarocks-${RESTY_LUAROCKS_VERSION} luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz \
     && yum remove -y make \
-    && yum clean all \
-    && ln -sf /dev/stdout /usr/local/openresty/nginx/logs/access.log \
-    && ln -sf /dev/stderr /usr/local/openresty/nginx/logs/error.log
+    && yum clean all
 
 # Unused, present for parity with other Dockerfiles
 # This makes some tooling/testing easier, as specifying a build-arg
