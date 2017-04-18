@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-docker build -t transformer:v0.2 .
+docker build -t transformer:v0.4 .
